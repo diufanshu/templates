@@ -22,9 +22,13 @@
 
 \RequirePackage[hmargin=31.7mm,vmargin=1in]{geometry}
 \RequirePackage{graphicx}
+\RequirePackage{tabularx}                               % 自动设置表格的列宽
 \RequirePackage{subfig}
 \RequirePackage{amsmath,amssymb,amsthm}
-\RequirePackage{paralist}
+%\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}    % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
+\RequirePackage{cases}      % 括号宏包
+\RequirePackage{paralist}   % 列表宏包
+\RequirePackage{mdwlist}    % 提供suspend 暂停列表功能的宏包
 \RequirePackage[xetex, unicode,
     pdfstartview=FitH,
     CJKbookmarks=true,
@@ -36,7 +40,32 @@
     anchorcolor=black,
     urlcolor=black,
     breaklinks=true]{hyperref}
-\RequirePackage[super]{cite}
+\RequirePackage[super]{cite}            % 更改引用文献格式为上标中括号
+\RequirePackage{multirow,bigstrut}      % 使用Multirow宏包，使得表格可以合并多个row格
+\RequirePackage{booktabs}               % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
+\RequirePackage{supertabular}           % 超表格环境
+\RequirePackage[labelsep=quad]{caption}
+\RequirePackage{listings} %插入代码
+\RequirePackage[dvipsnames]{xcolor} %代码高亮
+
+%% 代码高亮设置
+\lstset{numbers=left, %设置行号位置
+        numberstyle=\tiny, %设置行号大小
+        keywordstyle=\color{blue}, %设置关键字颜色
+        commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
+        frame=single, %设置边框格式
+        escapeinside=``, %逃逸字符，用于显示中文
+        breaklines, %自动折行
+        extendedchars=false,
+        xleftmargin=2em,xrightmargin=2em, aboveskip=1em, %设置边距
+        tabsize=4, %设置tab空格数
+        showspaces=false %不显示空格
+       }
+       
+%支持算法环境
+%\RequirePackage[boxed,ruled,lined]{algorithm2e}
+%\RequirePackage{algorithmic}
+
 \renewcommand\citeform[1]{[#1]}
 %\renewcommand\citeleft{}
 %\renewcommand\citeright{}
@@ -77,7 +106,10 @@
 				 \setcounter{section}{-1}}
 \AtEndDocument{\clearpage}
 
-%%% ����ҳüҳ��
+\newcommand{\reff}[1]{图~\ref{#1}~}      % 定义图片引用
+\newcommand{\reft}[1]{表~\ref{#1}~}      % 定义表格引用
+\renewcommand{\eqref}[1]{式~(\ref{#1})}  % 定义公式引用
+%%% 定义页眉页脚
 %\newsavebox{\csologo}
 %\sbox{\csologo}{\includegraphics{csologo}}
 \RequirePackage{fancyhdr}
@@ -88,14 +120,14 @@
 %\fancyfoot{}
 \fancyfoot[C]{-\ {\thepage}\ -}
 
-%%% �����ϱ���ʽ����������
+%%% 定义上标形式的文献引用
 %\renewcommand{\cite}[1]{\textsuperscript{\cite{#1}}}
 
 
-%%% �����б������ľ���
+%%% 设置列表环境的距离
 \setlength{\parsep}{0cm}
 
-%%% ����ͼ���������¿հ�
+%%% 设置图表标题上下空白
 \setlength{\abovecaptionskip}{5pt plus 5pt minus 0pt}% 
 \setlength{\belowcaptionskip}{5pt plus 5pt minus 0pt}% 
 \bibliographystyle{../templates/GBT7714-2005NLang-ZJU}
