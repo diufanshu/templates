@@ -46,6 +46,7 @@
 %----------------------------------------------------------------------------------------
 \RequirePackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,a4paper]{geometry} % Page margins
 \RequirePackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
 \RequirePackage{xcolor} % Required for specifying colors by name
 \definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 
