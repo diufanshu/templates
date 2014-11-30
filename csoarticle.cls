@@ -44,7 +44,8 @@
 \RequirePackage{multirow,bigstrut}      % 使用Multirow宏包，使得表格可以合并多个row格
 \RequirePackage{booktabs}               % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
 \RequirePackage{supertabular}           % 超表格环境
-\RequirePackage[labelsep=quad]{caption}
+\RequirePackage{caption}
+\RequirePackage{floatrow}
 \RequirePackage{listings} %插入代码
 \RequirePackage[dvipsnames]{xcolor} %代码高亮
 
@@ -106,8 +107,8 @@
 				 \setcounter{section}{-1}}
 \AtEndDocument{\clearpage}
 
-\newcommand{\reff}[1]{图~\ref{#1}~}      % 定义图片引用
-\newcommand{\reft}[1]{表~\ref{#1}~}      % 定义表格引用
+\newcommand{\figref}[1]{图~\ref{#1}~}      % 定义图片引用
+\newcommand{\tabref}[1]{表~\ref{#1}~}      % 定义表格引用
 \renewcommand{\eqref}[1]{式~(\ref{#1})}  % 定义公式引用
 %%% 定义页眉页脚
 %\newsavebox{\csologo}
