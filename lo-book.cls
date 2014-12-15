@@ -39,7 +39,7 @@
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 
 \ProvidesClass{lo-book}[2014/11/23 v1.4.0 Legrand Orange book class]
-\LoadClass[11pt,a4paper,fleqn]{book}
+\LoadClass[11pt,a4paper,fleqn,openany]{book}
 
 %----------------------------------------------------------------------------------------
 %	VARIOUS REQUIRED PACKAGES
@@ -83,8 +83,10 @@
 
 \RequirePackage[english]{babel} % English language/hyphenation
 
-\RequirePackage{enumitem} % Customize lists
-\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+%\RequirePackage{enumerate}
+%\RequirePackage{enumitem} % Customize lists
+%\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\RequirePackage{paralist}
 
 \RequirePackage{booktabs} % Required for nicer horizontal rules in tables
 
@@ -175,7 +177,7 @@
 %----------------------------------------------------------------------------------------
 
 \RequirePackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
-
+\RequirePackage{cases} % 左花括号环境
 \newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
 \newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
 \newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
