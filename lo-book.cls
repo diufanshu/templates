@@ -179,6 +179,7 @@
 \RequirePackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
 \RequirePackage{cases} % 左花括号环境
 \RequirePackage{bm} % 数学环境中字体加粗
+\RequirePackage{mathrsfs} % 花体字
 \newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
 \newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
 \newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
