@@ -92,6 +92,8 @@
 
 \RequirePackage{eso-pic} % Required for specifying an image background in the title page
 
+\RequirePackage{listings}  % 插入代码宏包
+
 %----------------------------------------------------------------------------------------
 %	MAIN TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
