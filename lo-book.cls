@@ -88,6 +88,8 @@
 %\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
 \RequirePackage{paralist}
 
+\RequirePackage{subfig} % 子图宏包 
+
 \RequirePackage{booktabs} % Required for nicer horizontal rules in tables
 
 \RequirePackage{eso-pic} % Required for specifying an image background in the title page
