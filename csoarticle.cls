@@ -45,7 +45,12 @@
 \RequirePackage{booktabs}               % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
 \RequirePackage{supertabular}           % 超表格环境
 \RequirePackage{caption}
+\RequirePackage{rotating}               % 旋转图表
 \RequirePackage{floatrow}
+\floatsetup[table]{style=Plaintop}
+%\RequirePackage{tikz}
+%\RequirePackage{rotfloat}
+\RequirePackage[all,pdf]{xy}
 \RequirePackage{listings} %插入代码
 \RequirePackage[dvipsnames]{xcolor} %代码高亮
 
