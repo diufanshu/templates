@@ -20,10 +20,7 @@
 \ProcessOptions
 \LoadClass{ctexart}
 
-\RequirePackage[top = 2.7cm,
-left = 1.7cm,
-right = 1.7cm,
-bottom = 2cm]{geometry}
+\RequirePackage[hmargin=31.7mm,vmargin=1in]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{tabularx}                               % 自动设置表格的列宽
 \RequirePackage{subfig}
