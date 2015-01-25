@@ -23,7 +23,7 @@
     \smallskip
     {\centering   \zihao{-3}\heiti               \cso@titleENG       \par}
     \smallskip
-    {\centering   \zihao{-4}                    \textit{\cso@authorENG}      \par}
+    {\centering   \zihao{5}                    \textit{\cso@authorENG}      \par}
     {\centering   \kaishu                       \cso@affiliationENG \par}
     \smallskip
     {\raggedright \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
