@@ -130,6 +130,12 @@
 %\renewcommand{\cite}[1]{\textsuperscript{\cite{#1}}}
 
 
+%%% 定义1级标题
+\CTEXsetup[format={\bfseries\heiti\zihao{-4}}]{section}
+%%% 定义2级标题
+\CTEXsetup[format={\heiti\zihao{5}}]{subsection}
+%%% 定义3级标题
+\CTEXsetup[format={\kaishu}]{subsubsection}
 %%% 设置列表环境的距离
 \setlength{\parsep}{0cm}
 
