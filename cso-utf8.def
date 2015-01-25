@@ -18,12 +18,12 @@
     {\raggedright \textbf{摘要：}\kaishu        \cso@abstractCHN    \par}
     {\raggedright \textbf{关键词：}\kaishu      \cso@keywordCHN     \par}
     %{\raggedright \textbf{中图分类号：}         \cso@cateidCHN      \par}
-    %\smallskip
-    %{\centering   \zihao{2}\heiti               \cso@titleENG       \par}
-    %{\centering   \zihao{-4}                    \cso@authorENG      \par}
-    %{\centering   \kaishu                       \cso@affiliationENG \par}
-    %{\raggedright \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
-    %{\raggedright \textbf{Key words: }\kaishu   \cso@keywordENG     \par}
+    \smallskip
+    {\centering   \zihao{2}\heiti               \cso@titleENG       \par}
+    {\centering   \zihao{-4}                    \cso@authorENG      \par}
+    {\centering   \kaishu                       \cso@affiliationENG \par}
+    {\raggedright \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
+    {\raggedright \textbf{Key words: }\kaishu   \cso@keywordENG     \par}
     \bigskip{}
     %
     \renewcommand\cso@titleCHN\relax
