@@ -9,19 +9,23 @@
 \renewcommand\maketitle{%
     \renewcommand\thefootnote{\fnsymbol{footnote}}
     \zihao{5}
-    {\centering   \zihao{2}\heiti               \cso@titleCHN%
+    {\centering   \zihao{4}\heiti               \textbf{\cso@titleCHN}%
         %\footnote[0]{\songti{\heiti 基金项目：} \cso@fund}%
         %\footnote[0]{\songti{\heiti 作者简介：} \cso@authorIntroduction}%
                                                                     \par}
-    {\centering   \zihao{-4}                    \cso@authorCHN      \par}
-    {\centering   \kaishu                       \cso@affiliationCHN \par}
+    \bigskip
+    {\centering   \zihao{5}\fangsong                    \cso@authorCHN      \par}
+    {\centering   \zihao{5}                      \cso@affiliationCHN \par}
+    \bigskip
     {\raggedright \textbf{摘要：}\kaishu        \cso@abstractCHN    \par}
     {\raggedright \textbf{关键词：}\kaishu      \cso@keywordCHN     \par}
     %{\raggedright \textbf{中图分类号：}         \cso@cateidCHN      \par}
     \smallskip
-    {\centering   \zihao{2}\heiti               \cso@titleENG       \par}
-    {\centering   \zihao{-4}                    \cso@authorENG      \par}
+    {\centering   \zihao{-3}\heiti               \cso@titleENG       \par}
+    \smallskip
+    {\centering   \zihao{-4}                    \textit{\cso@authorENG}      \par}
     {\centering   \kaishu                       \cso@affiliationENG \par}
+    \smallskip
     {\raggedright \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
     {\raggedright \textbf{Key words: }\kaishu   \cso@keywordENG     \par}
     \bigskip{}
