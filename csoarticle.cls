@@ -27,7 +27,7 @@ bottom = 2cm]{geometry}
 \RequirePackage{graphicx}
 \RequirePackage{tabularx}                               % 自动设置表格的列宽
 \RequirePackage{subfig}
-\RequirePackage{amsmath,amssymb,amsthm}
+\RequirePackage{bm,amsmath,amssymb,amsthm}
 %\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}    % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
 \RequirePackage{cases}      % 括号宏包
 \RequirePackage{paralist}   % 列表宏包
