@@ -53,6 +53,7 @@
 \RequirePackage[all,pdf]{xy}
 \RequirePackage{listings} %插入代码
 \RequirePackage[dvipsnames]{xcolor} %代码高亮
+%\RequirePackage[numbers,sort&compress]{natbib}
 
 %% 代码高亮设置
 \lstset{numbers=left, %设置行号位置
@@ -142,6 +143,6 @@
 %%% 设置图表标题上下空白
 \setlength{\abovecaptionskip}{5pt plus 5pt minus 0pt}% 
 \setlength{\belowcaptionskip}{5pt plus 5pt minus 0pt}% 
-\bibliographystyle{../templates/GBT7714-2005NLang-ZJU}
+\bibliographystyle{../templates/Thesis}
 
 \endinput

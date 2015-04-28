@@ -20,14 +20,14 @@
     {\raggedright \textbf{摘要：}\kaishu        \cso@abstractCHN    \par}
     {\raggedright \textbf{关键词：}\kaishu      \cso@keywordCHN     \par}
     %{\raggedright \textbf{中图分类号：}         \cso@cateidCHN      \par}
-    \smallskip
-    {\centering   \zihao{-3}\heiti               \cso@titleENG       \par}
+    \bigskip
+    {\centering   \zihao{-3}\heiti               \textbf{\cso@titleENG}       \par}
     \smallskip
     {\centering   \zihao{5}                    \textit{\cso@authorENG}      \par}
     {\centering   \kaishu                       \cso@affiliationENG \par}
     \smallskip
-    {\raggedright \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
-    {\raggedright \textbf{Key words: }\kaishu   \cso@keywordENG     \par}
+    {\noindent \textbf{Abstract:  }\kaishu   \cso@abstractENG    \par}
+    {\noindent \textbf{Key words: }\kaishu   \cso@keywordENG     \par}
     \bigskip{}
     %
     \renewcommand\cso@titleCHN\relax
