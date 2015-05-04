@@ -110,12 +110,16 @@
 
 
 \AtBeginDocument{\setcounter{footnote}{0}%
-				 \setcounter{section}{-1}}
+				 \setcounter{section}{0}}
 \AtEndDocument{\clearpage}
 
 \newcommand{\figref}[1]{图~\ref{#1}~}      % 定义图片引用
 \newcommand{\tabref}[1]{表~\ref{#1}~}      % 定义表格引用
 \renewcommand{\eqref}[1]{式~(\ref{#1})}  % 定义公式引用
+
+\DeclareCaptionFont{hei}{\heiti}
+\DeclareCaptionFont{kai}{\kaishu}
+\captionsetup{labelfont=hei, textfont=kai}
 %%% 定义页眉页脚
 %\newsavebox{\csologo}
 %\sbox{\csologo}{\includegraphics{csologo}}
@@ -132,9 +136,9 @@
 
 
 %%% 定义1级标题
-\CTEXsetup[format={\bfseries\heiti\zihao{-4}}]{section}
+\CTEXsetup[format={\kaishu\zihao{-4}}]{section}
 %%% 定义2级标题
-\CTEXsetup[format={\heiti\zihao{5}}]{subsection}
+\CTEXsetup[format={\kaishu\zihao{5}}]{subsection}
 %%% 定义3级标题
 \CTEXsetup[format={\kaishu}]{subsubsection}
 %%% 设置列表环境的距离
