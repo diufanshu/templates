@@ -132,7 +132,7 @@
 
 
 %%% 定义1级标题
-\CTEXsetup[format={\bfseries\heiti\zihao{-4}}]{section}
+\CTEXsetup[format={\heiti\zihao{-4}}]{section}
 %%% 定义2级标题
 \CTEXsetup[format={\heiti\zihao{5}}]{subsection}
 %%% 定义3级标题
