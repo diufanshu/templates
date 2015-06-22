@@ -1,0 +1,43 @@
+% !Mode:: "TeX:UTF-8"
+% !TEX program = xelatex
+\documentclass[UTF8]{csoarticle}	% 填写csoarticle.cls 的路径， 例如 ../templates/csoarticle
+
+\begin{document}
+
+%----------------------------------------------------------
+% 1. 文章标头信息
+%----------------------------------------------------------
+\titleCHN{中文题目}
+\authorCHN{中文姓名}
+\affiliationCHN{
+    （中文机构信息）
+}
+\abstractCHN{中文摘要
+}
+\keywordCHN{中文关键词}
+
+\titleENG{English Title}
+\authorENG{English Author}
+\affiliationENG{
+	(English Falicity)
+}
+\abstractENG{English Abstract}
+\keywordENG{English Keywords}
+
+\maketitle			% 生成信息
+
+%----------------------------------------------------------
+% 文章主体
+%----------------------------------------------------------
+%\input{intro.tex}
+%\input{cloud.tex}
+%\input{thinking.tex}
+%\input{model.tex}
+%\input{analysis.tex}
+%\input{conclusion.tex}
+
+%---------------------------------------------------------
+% 尾巴
+%---------------------------------------------------------
+\bibliography{references}
+\end{document}
