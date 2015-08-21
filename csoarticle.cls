@@ -47,6 +47,7 @@
 \RequirePackage{caption}
 \RequirePackage{rotating}               % 旋转图表
 \RequirePackage{floatrow}
+\RequirePackage{pifont}                 % 列表符号宏包
 \floatsetup[table]{style=Plaintop}
 %\RequirePackage{tikz}
 %\RequirePackage{rotfloat}
