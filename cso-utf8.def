@@ -4,7 +4,7 @@
 %%%
 
 \CTEXsetup[format+=\raggedright]{section}
-\CTEXoptions[bibname={参考文献}]
+%\CTEXoptions[bibname={参考文献}]
 
 \renewcommand\maketitle{%
     \renewcommand\thefootnote{\fnsymbol{footnote}}

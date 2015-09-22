@@ -9,16 +9,16 @@
    document class]
 
 % encoding
-\newif\ifCSO@GBK \CSO@GBKfalse
-\DeclareOption{GBK}{\CSO@GBKtrue\PassOptionsToClass{\CurrentOption}{ctexart}}
-\DeclareOption{UTF8}{\CSO@GBKfalse\PassOptionsToClass{\CurrentOption}{ctexart}}
-\DeclareOption{gbk}{\CSO@GBKtrue\PassOptionsToClass{\CurrentOption}{ctexart}}
-\DeclareOption{utf8}{\CSO@GBKfalse\PassOptionsToClass{\CurrentOption}{ctexart}}
+%\newif\ifCSO@GBK \CSO@GBKfalse
+%\DeclareOption{GBK}{\CSO@GBKtrue\PassOptionsToClass{\CurrentOption}{ctexart}}
+%\DeclareOption{UTF8}{\CSO@GBKfalse\PassOptionsToClass{\CurrentOption}{ctexart}}
+%\DeclareOption{gbk}{\CSO@GBKtrue\PassOptionsToClass{\CurrentOption}{ctexart}}
+%\DeclareOption{utf8}{\CSO@GBKfalse\PassOptionsToClass{\CurrentOption}{ctexart}}
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexart}}
-\ExecuteOptions{winfonts,fancyhdr,hyperref}
+%\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ExecuteOptions{a4paper,fancyhdr,hyperref}
 \ProcessOptions
-\LoadClass{ctexart}
+\LoadClass{article}
 
 \RequirePackage[hmargin=31.7mm,vmargin=1in]{geometry}
 \RequirePackage{graphicx}
@@ -31,7 +31,7 @@
 \RequirePackage{mdwlist}    % 提供suspend 暂停列表功能的宏包
 \RequirePackage[xetex, unicode,
     pdfstartview=FitH,
-    CJKbookmarks=true,
+%    CJKbookmarks=true,
     bookmarksnumbered=true,
     bookmarksopen=true,
     colorlinks=true,
@@ -113,9 +113,9 @@
 				 \setcounter{section}{-1}}
 \AtEndDocument{\clearpage}
 
-\newcommand{\figref}[1]{图~\ref{#1}~}      % 定义图片引用
-\newcommand{\tabref}[1]{表~\ref{#1}~}      % 定义表格引用
-\renewcommand{\eqref}[1]{式~(\ref{#1})}  % 定义公式引用
+%\newcommand{\figref}[1]{图~\ref{#1}~}      % 定义图片引用
+%\newcommand{\tabref}[1]{表~\ref{#1}~}      % 定义表格引用
+%\renewcommand{\eqref}[1]{式~(\ref{#1})}  % 定义公式引用
 %%% 定义页眉页脚
 %\newsavebox{\csologo}
 %\sbox{\csologo}{\includegraphics{csologo}}
@@ -137,6 +137,6 @@
 %%% 设置图表标题上下空白
 \setlength{\abovecaptionskip}{5pt plus 5pt minus 0pt}% 
 \setlength{\belowcaptionskip}{5pt plus 5pt minus 0pt}% 
-\bibliographystyle{../templates/GBT7714-2005NLang-ZJU}
+\bibliographystyle{abbrv}
 
 \endinput
