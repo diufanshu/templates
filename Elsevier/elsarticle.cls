@@ -74,7 +74,7 @@
   \let\iiiint\relax
   \let\idotsint\relax
   \let\openbox\relax}}{\RequirePackage{times}}}
-\ExecuteOptions{a4paper,10pt,oneside,onecolumn,number,preprint}
+\ExecuteOptions{a4paper,10pt,oneside,onecolumn,number,preprint,fancyhdr,hyperref}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions
 \LoadClass{article}
@@ -804,6 +804,13 @@
     $\ast\ast$\fi}%
     \footnotetext{#2}}}
 }
+
+\AtEndOfPackage{\makeatletter\input{../templates/Elsevier/sky.def}\makeatother}
+
+
+\AtBeginDocument{\setcounter{footnote}{0}%
+         \setcounter{section}{-1}}
+\AtEndDocument{\clearpage}
 \endinput
 %%
 %% End of file `elsarticle.cls'.
