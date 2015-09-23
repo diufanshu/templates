@@ -1,0 +1,54 @@
+%%% sky.def
+
+\newcommand{\figref}[1]{Figure:~\ref{#1}~}
+\newcommand{\tabref}[1]{Table:~\ref{#1}~}
+%\newcommand{\eqref}[1]{(\ref{#1})}
+
+\RequirePackage[xetex, unicode,
+    pdfstartview=FitH,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    colorlinks=true,
+    citecolor=black,
+    linkcolor=black,
+    anchorcolor=black,
+    urlcolor=black,
+    breaklinks=true]{hyperref}
+
+\RequirePackage{tabularx}                               % 自动设置表格的列宽
+\RequirePackage{subfig}
+\RequirePackage{bm,amsmath,amssymb,amsthm}
+%\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}    % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
+\RequirePackage{cases}      % 括号宏包
+\RequirePackage{paralist}   % 列表宏包
+\RequirePackage{mdwlist}    % 提供suspend 暂停列表功能的宏包
+
+\RequirePackage{multirow,bigstrut}      % 使用Multirow宏包，使得表格可以合并多个row格
+\RequirePackage{booktabs}               % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
+\RequirePackage{supertabular}           % 超表格环境
+\RequirePackage{caption}
+\RequirePackage{rotating}               % 旋转图表
+\RequirePackage{floatrow}
+\RequirePackage{pifont}                 % 列表符号宏包
+\floatsetup[table]{style=Plaintop}
+%\RequirePackage{tikz}
+%\RequirePackage{rotfloat}
+\RequirePackage[all,pdf]{xy}
+\RequirePackage{listings} %插入代码
+\RequirePackage[dvipsnames]{xcolor} %代码高亮
+
+%% 代码高亮设置
+\lstset{numbers=left, %设置行号位置
+        numberstyle=\tiny, %设置行号大小
+        keywordstyle=\color{blue}, %设置关键字颜色
+        commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
+        frame=single, %设置边框格式
+        escapeinside=``, %逃逸字符，用于显示中文
+        breaklines, %自动折行
+        extendedchars=false,
+        xleftmargin=2em,xrightmargin=2em, aboveskip=1em, %设置边距
+        tabsize=4, %设置tab空格数
+        showspaces=false %不显示空格
+       }
+
+\endinput
