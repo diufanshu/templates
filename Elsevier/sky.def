@@ -31,24 +31,50 @@
 \RequirePackage{floatrow}
 \RequirePackage{pifont}                 % 列表符号宏包
 \floatsetup[table]{style=Plaintop}
-%\RequirePackage{tikz}
+
+%%% tikz 绘图
+\RequirePackage{tikz}
+\usetikzlibrary{shapes,arrows,chains}
+%\usepackage{verbatim}
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%\setlength\PreviewBorder{5mm}%
+\colorlet{lcfree}{Green3}
+\colorlet{lcnorm}{Blue3}
+\colorlet{lccong}{Red3}
+% -------------------------------------------------
+% Set up a new layer for the debugging marks, and make sure it is on
+% top
+\pgfdeclarelayer{marx}
+\pgfsetlayers{main,marx}
+% A macro for marking coordinates (specific to the coordinate naming
+% scheme used here). Swap the following 2 definitions to deactivate
+% marks.
+\providecommand{\cmark}[2][]{%
+  \begin{pgfonlayer}{marx}
+    \node [nmark] at (c#2#1) {#2};
+  \end{pgfonlayer}{marx}
+  } 
+\providecommand{\cmark}[2][]{\relax} 
+
+
 %\RequirePackage{rotfloat}
 \RequirePackage[all,pdf]{xy}
 \RequirePackage{listings} %插入代码
-\RequirePackage[dvipsnames]{xcolor} %代码高亮
+%\RequirePackage[dvipsnames]{xcolor} %代码高亮
 
 %% 代码高亮设置
-\lstset{numbers=left, %设置行号位置
-        numberstyle=\tiny, %设置行号大小
-        keywordstyle=\color{blue}, %设置关键字颜色
-        commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
-        frame=single, %设置边框格式
-        escapeinside=``, %逃逸字符，用于显示中文
-        breaklines, %自动折行
-        extendedchars=false,
-        xleftmargin=2em,xrightmargin=2em, aboveskip=1em, %设置边距
-        tabsize=4, %设置tab空格数
-        showspaces=false %不显示空格
-       }
+%\lstset{numbers=left, %设置行号位置
+%        numberstyle=\tiny, %设置行号大小
+%        keywordstyle=\color{blue}, %设置关键字颜色
+%        commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
+%        frame=single, %设置边框格式
+%        escapeinside=``, %逃逸字符，用于显示中文
+%        breaklines, %自动折行
+%        extendedchars=false,
+%        xleftmargin=2em,xrightmargin=2em, aboveskip=1em, %设置边距
+%        tabsize=4, %设置tab空格数
+%        showspaces=false %不显示空格
+%       }
 
 \endinput
