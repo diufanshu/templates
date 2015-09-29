@@ -1,7 +1,7 @@
 %%% sky.def
 
-\newcommand{\figref}[1]{Figure:~\ref{#1}~}
-\newcommand{\tabref}[1]{Table:~\ref{#1}~}
+\newcommand{\figref}[1]{Figure~\ref{#1}~}
+\newcommand{\tabref}[1]{Table~\ref{#1}~}
 %\newcommand{\eqref}[1]{(\ref{#1})}
 
 \RequirePackage[xetex, unicode,
@@ -34,7 +34,7 @@
 
 %%% tikz 绘图
 \RequirePackage{tikz}
-\usetikzlibrary{shapes,arrows,chains}
+\usetikzlibrary{mindmap,shapes,arrows,chains,shadows}
 %\usepackage{verbatim}
 %\usepackage[active,tightpage]{preview}
 %\PreviewEnvironment{tikzpicture}
