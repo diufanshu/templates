@@ -1,7 +1,8 @@
 %%% sky.def
 
-\newcommand{\figref}[1]{Figure~\ref{#1}~}
-\newcommand{\tabref}[1]{Table~\ref{#1}~}
+%\newcommand{\figref}[1]{Fig.~\ref{#1}~}
+%\newcommand{\tabref}[1]{Tab.~\ref{#1}~}
+%\newcommand{\secref}[1]{Sec.~\ref{#1}~}
 %\newcommand{\eqref}[1]{(\ref{#1})}
 
 \RequirePackage[xetex, unicode,
@@ -13,7 +14,13 @@
     linkcolor=black,
     anchorcolor=black,
     urlcolor=black,
+    draft,
     breaklinks=true]{hyperref}
+\renewcommand\figureautorefname{Fig.}
+\renewcommand\tableautorefname{Tab.}
+\renewcommand\sectionautorefname{Sec.}
+\renewcommand\subsectionautorefname{Sec.}
+\newcommand{\subfigureautorefname}{\figureautorefname}
 
 \RequirePackage{tabularx}                               % 自动设置表格的列宽
 \RequirePackage{subfig}
