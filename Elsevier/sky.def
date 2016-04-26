@@ -20,6 +20,7 @@
 \renewcommand\tableautorefname{Tab.}
 \renewcommand\sectionautorefname{Sec.}
 \renewcommand\subsectionautorefname{Sec.}
+\renewcommand\subsubsectionautorefname{Sec.}
 \newcommand{\subfigureautorefname}{\figureautorefname}
 
 \RequirePackage{tabularx}                               % 自动设置表格的列宽
