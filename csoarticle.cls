@@ -53,8 +53,9 @@
 \RequirePackage[all,pdf]{xy}
 \RequirePackage{listings} %插入代码
 \RequirePackage[dvipsnames]{xcolor} %代码高亮
-%\RequirePackage[numbers,sort&compress]{natbib}
-
+\RequirePackage[numbers,sort&compress,super,square,comma]{natbib}
+% hypernat 可以让hyperref 和natbib 混合使用，但它需要放在这两者之后。
+\RequirePackage{hypernat}
 %% 代码高亮设置
 \lstset{numbers=left, %设置行号位置
         numberstyle=\tiny, %设置行号大小
