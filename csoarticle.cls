@@ -74,6 +74,10 @@
 %\RequirePackage[boxed,ruled,lined]{algorithm2e}
 %\RequirePackage{algorithmic}
 
+\renewcommand\figureautorefname{图}
+\renewcommand\tableautorefname{表}
+\renewcommand\equationautorefname{公式}
+
 \renewcommand\citeform[1]{[#1]}
 %\renewcommand\citeleft{}
 %\renewcommand\citeright{}
