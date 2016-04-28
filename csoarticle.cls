@@ -77,6 +77,9 @@
 \renewcommand\figureautorefname{图}
 \renewcommand\tableautorefname{表}
 \renewcommand\equationautorefname{公式}
+\renewcommand\subsectionautorefname{Sec.}
+\renewcommand\subsubsectionautorefname{Sec.}
+\newcommand{\subfigureautorefname}{\figureautorefname}
 
 \renewcommand\citeform[1]{[#1]}
 %\renewcommand\citeleft{}
