@@ -24,7 +24,7 @@
 \newcommand{\subfigureautorefname}{\figureautorefname}
 
 \RequirePackage{tabularx}                               % 自动设置表格的列宽
-\RequirePackage{subfig}
+\RequirePackage[caption=false]{subfig}
 \RequirePackage{bm,amsmath,amssymb,amsthm}
 %\RequirePackage[amsmath,thmmarks,hyperref]{ntheorem}    % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS LaTeX 的宏包
 \RequirePackage{cases}      % 括号宏包
@@ -34,7 +34,7 @@
 \RequirePackage{multirow,bigstrut}      % 使用Multirow宏包，使得表格可以合并多个row格
 \RequirePackage{booktabs}               % 表格，横的粗线；\specialrule{1pt}{0pt}{0pt}
 \RequirePackage{supertabular}           % 超表格环境
-\RequirePackage{caption}
+% \RequirePackage{caption}
 \RequirePackage{rotating}               % 旋转图表
 \RequirePackage{floatrow}
 \RequirePackage{pifont}                 % 列表符号宏包
