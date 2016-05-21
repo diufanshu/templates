@@ -40,6 +40,10 @@
 \RequirePackage{pifont}                 % 列表符号宏包
 \floatsetup[table]{style=Plaintop}
 
+
+%% 乱七八糟字体编码
+\RequirePackage[T1]{fontenc}
+
 %%% tikz 绘图
 \RequirePackage{tikz}
 \usetikzlibrary{mindmap,shapes,arrows,chains,shadows,decorations.markings}
