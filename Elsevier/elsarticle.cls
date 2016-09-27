@@ -461,7 +461,7 @@
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
            {12\p@ \@plus 6\p@ \@minus 3\p@}%
            {3\p@ \@plus 6\p@ \@minus 3\p@}%
-           {\normalfont\normalsize\itshape}}
+           {\normalfont\normalsize}}%\itshape}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
            {12\p@ \@plus 6\p@ \@minus 3\p@}%
            {\p@}%
